@@ -1,97 +1,113 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=EB+Garamond&family=Kaushan+Script&family=Libre+Baskerville:ital@0;1&family=Montserrat&family=Pacifico&family=Poppins:wght@300&family=Raleway:wght@200&family=Roboto+Slab:wght@500&family=Tenor+Sans&display=swap");
+body{
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+.hero-heading {
+  font-family: "Roboto Slab", serif;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.hero-title {
+  font-family: "EB Garamond", serif;
+  display: flex;
+  text-align: center;
+  width: fit-content;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.nav {
+  border-bottom: 1px solid black;
+  background-color:  rgba(60, 90, 90, .2);
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.contents{
+  /* border:2px solid blue; */
+  height:80.5vh;
+  margin-left:4rem;
+  /* display:flex;
+  flex-direction:column;
+  justify-contents:center; */
 }
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.contents h3 {
+  font-family: "Roboto Slab", serif;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.contents p {
+  font-family: "Roboto Slab", serif;
+}
+.contents .acts {
+  font-size: 4rem;
+}
+
+@media (max-width: 960px) {
+  .contents{
+    align-items:center;
+    margin-left:0rem;
   }
-  a:hover {
-    color: #747bff;
+  .contents span{
+    flex-direction:column;
+    align-items:center;
   }
-  button {
-    background-color: #f9f9f9;
+  .contents h3,p{
+    text-align:center;
   }
+}
+
+@media (max-width: 626px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-title {
+    margin: auto;
+  }
+  .nav img{
+    width:100px;
+    height:80px;
+  }
+}
+
+@media (max-width:850px){
+  .menu{
+    display: none !important;
+  }
+  .ham{
+    visibility: visible !important;
+  }
+}
+
+.menu{
+  /* border:1px solid red; */
+  height:2rem;
+  margin-bottom:0;
+  background-color:  rgba(60, 90, 90, .1);
+  list-style:none;
+  display:flex;
+  justify-content:space-around;
+  border-bottom:1px solid black;
+}
+
+.ham{
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+  position:absolute;
+  /* position:flex-start; */
+  margin:1rem;
+  visibility:hidden;
+  /* display:none;  */
+}
+.ham span{
+  border:1.5px solid black;
+  width:2rem;
+  /* height:5r; */
+  display:block;
+}
+
+.overlay {
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
