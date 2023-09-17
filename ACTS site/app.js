@@ -12,5 +12,3 @@ VANTA.GLOBE({
     backgroundColor: 0xfdf8f3,
     size: 1,
   });
-  
-let ham=document.getElementsByClassName("ham");
