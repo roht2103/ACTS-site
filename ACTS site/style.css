@@ -200,12 +200,16 @@ body {
   letter-spacing:1px;
 }
 footer{
-  height:65vh;
+  height:fit-content;
   background-color: rgba(97, 38, 37, .2);
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:flex-end;
+}
+footer section h1{
+  margin:1rem;
+  color:gray;
 }
 footer p{
   text-align:right;
@@ -216,16 +220,27 @@ footer p{
   width:100%;
 }
 footer section{
-  /* border:1px solid red; */
   width:100%;
   font-family: 'Libre Baskerville', serif;
 }
-footer section h1{
-  /* margin-bottom:1rem; */
-  /* border:1px solid blue; */
-  margin:2rem 0rem 2rem 11.5rem;
-}
 footer section span ul li{
   margin:1rem;
+  padding:0;
   list-style:none;
+  /* text-align:center; */
+}
+
+@media (max-width:1100px){
+  .info{
+    flex-direction:column;
+  }
+}
+.row{
+  margin:0px;
+  padding:0px 0px;
+  /* border:2px solid; */
+  justify-content:space-around;
+}
+.col-md-3, .col-4{
+  padding:0rem;
 }
