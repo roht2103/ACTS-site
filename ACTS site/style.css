@@ -42,19 +42,25 @@ body {
   font-size: 4rem;
 }
 
-.contents span span button{
+.contents span span a{
   width:fit-content;
   border:0px;
   background-color:rgba(97, 38, 37, .5);
   padding:.5rem 1rem;
   border-radius:.2rem;
   color:white;
+  font-family: "Roboto Slab", serif;
+  text-decoration:none;
+}
+.contents span span a:hover{
+  box-shadow: 3px 3px 10px gray;
+  transition:.2s;
 }
 
 @media (max-width: 960px) {
   .contents {
     /* align-items: center; */
-    margin:0px;
+    padding:0px;
   }
   .contents span {
     flex-direction: column;
@@ -154,4 +160,15 @@ body {
   /* padding: 20px; Add padding to prevent content from overlapping with the background */
     height: 100vh; /* Adjust the height as needed */
     overflow-y: auto;
+}
+
+.about{
+  height:100vh;
+  /* border:2px solid red; */
+  background-color:rgba(	211, 211, 211,.4);
+  padding:2rem;
+}
+.about h1{
+  text-align:center;
+  font-family: "Roboto Slab", serif;
 }
