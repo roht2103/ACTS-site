@@ -172,3 +172,60 @@ body {
   text-align:center;
   font-family: "Roboto Slab", serif;
 }
+.info{
+  height:88.5vh;
+  display:flex;
+  align-items:center; 
+  justify-content:space-between ;
+  padding:1rem;
+  /* border:1px solid red; */
+}
+.info img{
+  box-shadow:5px 5px 15px gray;
+  border-radius:1rem;
+}
+.info img:hover{
+  box-shadow:10px 10px 20px gray;
+  transition:.5s;
+}
+.info section{
+  /* border:1px solid red; */
+  width:55%;
+  height:100%;
+  padding:2rem 1rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family: "EB Garamond", serif;
+  letter-spacing:1px;
+}
+footer{
+  height:65vh;
+  background-color: rgba(97, 38, 37, .2);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-end;
+}
+footer p{
+  text-align:right;
+  color:gray;
+  font-style:italic;
+  padding-right:.5rem;
+  /* border:1px solid red; */
+  width:100%;
+}
+footer section{
+  /* border:1px solid red; */
+  width:100%;
+  font-family: 'Libre Baskerville', serif;
+}
+footer section h1{
+  /* margin-bottom:1rem; */
+  /* border:1px solid blue; */
+  margin:2rem 0rem 2rem 11.5rem;
+}
+footer section span ul li{
+  margin:1rem;
+  list-style:none;
+}
