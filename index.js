@@ -1,7 +1,7 @@
 const ham= document.getElementById('ham');
 const sidebar=document.querySelector('.sidebar')
 // console.log("hello");
-alert("The site is under development so some functions may not work")
+// alert("The site is under development so some functions may not work")
 
 ham.addEventListener('click', function(event) {
     event.stopPropagation();
