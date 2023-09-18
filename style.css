@@ -279,6 +279,16 @@ footer section span ul li a{
   .about{
     padding:.5rem;
   }
+  footer section span ul li a{
+    font-size:13.5px;
+  }
+  footer section span ul .col-md-3,.col-4{
+    margin:.5rem;
+    padding:0;
+  }
+}
+footer section span ul .col-md-3,.col-4{
+  text-decoration:underline 1px black;
 }
 @media (max-width:430px){
   .info img{
