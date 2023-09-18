@@ -7,7 +7,9 @@ body {
   background-attachment: fixed;
   /* position:fixed; */
 }
-
+.container{
+  padding-right:0;
+}
 .hero-heading {
   font-family: "Roboto Slab", serif;
   display: flex;
@@ -89,6 +91,7 @@ body {
 
 @media (max-width: 850px) {
   .menu {
+    display:none;
     visibility: hidden;
   }
   .ham{
@@ -168,6 +171,7 @@ body {
 .overflow{
   /* padding: 20px; Add padding to prevent content from overlapping with the background */
     height: 100vh; /* Adjust the height as needed */
+    width:100vw;
     overflow-y: auto;
 }
 
