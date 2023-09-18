@@ -182,7 +182,7 @@ body {
 
 .about{
   height:100vh;
-  border:2px solid red;
+  /* border:2px solid red; */
   background-color:rgba(	211, 211, 211,.4);
   padding:2rem;
 }
