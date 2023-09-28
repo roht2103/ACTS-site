@@ -1,4 +1,4 @@
-<a href="https://actss.netlify.app># ACTS-site</a>
+# ACTS-site
 A website for Computer Department
 
 
